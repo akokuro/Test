@@ -3,6 +3,7 @@ using iTextSharp.text.pdf;
 using Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Repotr
 {
-    public class CreateReport
+    public class CreateReport: Component
     {
         public void createReport(String FileName, String Title, String[] ColumnNames, List<Obj> data)
         {
